@@ -1,17 +1,16 @@
 package ru.irute.practice.model;
 
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.ModelAttribute;
 
-import javax.persistence.Entity;
+import java.util.HashMap;
 import java.util.Map;
 @Component
 public class Business {
     String country;
     String lineBusiness;
     String yar;
-    double value;
-    Map<String, Double> map;
+    String value;
+    Map<Object, Object> map = new HashMap<>();
 
     public String getCountry() {
         return country;
@@ -33,30 +32,37 @@ public class Business {
         return yar;
     }
 
-    public void setYar(String yar) {
+    public String setYar(String yar) {
         this.yar = yar;
+        return yar;
     }
 
-    public double getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(double value) {
+    public String setValue(String value) {
         this.value = value;
+        return value;
     }
 
-    public Map<String, Double> getMap() {
+    public Map<Object, Object> getMap() {
         return map;
     }
 
-    public void setMap(Map<String, Double> map) {
+  //  public void setMap(Map<String, String> map) {
+//        this.map = map;
+ //   }
+
+    public Business(String country, String lineBusiness, Map<Object, Object> map) {
+        this.country = country;
+        this.lineBusiness = lineBusiness;
         this.map = map;
     }
 
-    public Business(String country, String lineBusiness) {
-        this.country = country;
-        this.lineBusiness = lineBusiness;
-    }
-
     public Business() { }
+
+    public void setMap(Object s, Object s1) {
+        map.put(s, s1);
+    }
 }

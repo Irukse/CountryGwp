@@ -1,17 +1,12 @@
 package ru.irute.practice.servise;
 
+import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import ru.irute.practice.model.Business;
-@Service
-public class ServiseGwp {
-    private  final Business business;
+public interface ServiseGwp {
 
-    @Autowired
-    public ServiseGwp(Business business) {
-        this.business = business;
-    }
-
-
+    /**
+     * Получить список линий бизнеса с средней value за 2005-2008 гг
+     * @return
+     */
+    List<String> list(String country, List<String> business);
 }
