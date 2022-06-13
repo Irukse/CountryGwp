@@ -23,28 +23,6 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(ru.irute.practice.Application.class, args);
 
-//       String file = "src/gwpByCountry.csv";
-
-//       BufferedReader reader=null;
-//       String line ;
-
-//       try {
-//           reader = new BufferedReader(new FileReader(file));
-//           while ((line = reader.readLine()) != null) {
-//               String [] row = line.split(",");
-//               System.out.println(Arrays.toString(row));
-//         //      List<String> list = new ArrayList();
-
-//           //    for(int i =0; i<row.length; i++){
-//           //        list.add(row[i]);
-
-//            //   }
-//            //   System.out.println(list);
-//           }
-//       } catch (Exception e) {
-//           System.out.println("что-то пошло не так");
-//       }
-
     }
 
 }

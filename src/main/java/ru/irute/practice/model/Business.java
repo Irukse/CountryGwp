@@ -8,9 +8,18 @@ import java.util.Map;
 public class Business {
     String country;
     String lineBusiness;
-    String yar;
+    String year;
     String value;
     Map<Object, Object> map = new HashMap<>();
+    Map<String, String> maps = new HashMap<>();
+
+    public Map<String, String> getMaps() {
+        return maps;
+    }
+
+    public void setMaps(Map<String, String> maps) {
+        this.maps = maps;
+    }
 
     public String getCountry() {
         return country;
@@ -28,13 +37,13 @@ public class Business {
         this.lineBusiness = lineBusiness;
     }
 
-    public String getYar() {
-        return yar;
+    public String getYear() {
+        return year;
     }
 
-    public String setYar(String yar) {
-        this.yar = yar;
-        return yar;
+    public String setYear(String year) {
+        this.year = year;
+        return year;
     }
 
     public String getValue() {
@@ -49,10 +58,6 @@ public class Business {
     public Map<Object, Object> getMap() {
         return map;
     }
-
-  //  public void setMap(Map<String, String> map) {
-//        this.map = map;
- //   }
 
     public Business(String country, String lineBusiness, Map<Object, Object> map) {
         this.country = country;

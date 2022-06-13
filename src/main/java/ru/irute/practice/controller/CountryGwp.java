@@ -24,8 +24,6 @@ private final ServiseGwpImpl serviseGwp;
     @PostMapping("/list")
     public List<String> getList(@RequestBody BusinessData data){
         return serviseGwp.list( data.getCount(), data.getLineBusiness());
-
-
     }
 
 }

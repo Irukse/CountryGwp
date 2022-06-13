@@ -1,5 +1,7 @@
 package ru.irute.practice.servise;
 
+import ru.irute.practice.model.Business;
+
 import java.util.List;
 
 public interface ServiseGwp {
@@ -9,4 +11,10 @@ public interface ServiseGwp {
      * @return
      */
     List<String> list(String country, List<String> business);
+
+    /** initialize Business and add in List
+     *
+     * @return
+     */
+    List<Business> getBusiness();
 }
