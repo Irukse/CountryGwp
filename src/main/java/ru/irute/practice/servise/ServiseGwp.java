@@ -7,7 +7,7 @@ import java.util.List;
 public interface ServiseGwp {
 
     /**
-     * Получить список линий бизнеса с средней value за 2005-2008 гг
+     * Get a list of business lines with an average value for 2008-2015
      * @return
      */
     List<String> list(String country, List<String> business);

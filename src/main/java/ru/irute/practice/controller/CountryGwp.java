@@ -21,7 +21,7 @@ private final ServiseGwpImpl serviseGwp;
         this.serviseGwp = serviseGwp;
     }
 
-    @PostMapping("/list")
+    @PostMapping("/server/api/gwp/avg")
     public List<String> getList(@RequestBody BusinessData data){
         return serviseGwp.list( data.getCount(), data.getLineBusiness());
     }
